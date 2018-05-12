@@ -1,18 +1,19 @@
-package com.anshulagrawal.demoapp;
+package com.anshulagrawal.toastdemo;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view) {
 
-        TextView myTextField = (TextView) findViewById(R.id.editText);
-        Toast.makeText(this, "Hi " + myTextField.getText().toString() + "!!", Toast.LENGTH_LONG).show();
+    public void clickMe(View view) {
+
+        TextView text = (TextView) findViewById(R.id.text);
+
+        Toast.makeText(this, "Hi There " + text.getText().toString() + "!!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
