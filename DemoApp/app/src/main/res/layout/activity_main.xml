@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+bgv f<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large"
@@ -9,57 +9,30 @@
     tools:context=".MainActivity"
     tools:visibility="visible">
 
-    <TextView
-        android:id="@+id/myTextField"
-        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_light"
-        android:padding="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:text="My Great App"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="x0  n          "
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:padding="10dp"
-        tools:textSize="46sp" />
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/p2" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="95dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="30dp"
-        android:onClick="clickFunction"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/myTextField"
-        app:layout_constraintTop_toBottomOf="@+id/myTextField" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="54dp"
-        android:ems="10"
-        android:hint="Enter Your Name..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/myTextField"
-        app:layout_constraintStart_toStartOf="@+id/myTextField"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
+        android:layout_marginBottom="37dp"
+        android:onClick="imageChange"
+        android:text="Click Me!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </android.support.constraint.ConstraintLayout>
