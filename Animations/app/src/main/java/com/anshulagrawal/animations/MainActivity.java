@@ -1,28 +1,42 @@
 package com.anshulagrawal.animations;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewPropertyAnimator;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private boolean isGokuOne;
+    private boolean isGokuTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*ImageView goku1 = findViewById(R.id.goku1);
+        ImageView goku2 = findViewById(R.id.goku2);
+        ImageView imageView = isGokuTwo ? goku2 : goku1;
+        imageView.setTranslationX(-1000f);*/
     }
 
     public void fade(View view) {
-        float goku1Float = isGokuOne ? 1f : 0f;
-        float goku2Float = isGokuOne ? 0f : 1f;
-        isGokuOne = !isGokuOne;
         ImageView goku1 = findViewById(R.id.goku1);
-        goku1.animate().alpha(goku1Float).setDuration(2000);
         ImageView goku2 = findViewById(R.id.goku2);
-        goku2.animate().alpha(goku2Float).setDuration(2000);
+
+        ImageView imageViewPrimary = isGokuTwo ? goku2 : goku1;
+        ImageView imageViewSecondary = isGokuTwo ? goku1 : goku2;
+
+        isGokuTwo = !isGokuTwo;
+
+        imageViewPrimary.animate().alpha(0f).setDuration(2000);
+        imageViewSecondary.animate().alpha(1f).setDuration(2000);
+
+        imageViewPrimary.animate().rotation(3600f).scaleX(0.5f).scaleY(0.5f)
+                .translationYBy(10f).translationX(10f).setDuration(2000);
+
+        imageViewPrimary.animate().rotation(-3600f)
+                .scaleX(1f).scaleY(1f).translationYBy(-10f).translationX(-10f).setDuration(2000);
+
     }
 }
