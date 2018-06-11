@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,13 +8,174 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/entryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="218dp"
+        android:onClick="enableGame"
+        android:text="GO!"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/brainTrainerGodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/timerTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="#ffee71"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="30s"
+                android:textAlignment="center"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/questionTestBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="3 + 5"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/scoreTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="#ff9100"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0/0"
+                android:textAlignment="center"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/answerATB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark"
+                    android:gravity="center"
+                    android:onClick="submitAnswer"
+                    android:padding="10dp"
+                    android:tag="0"
+                    android:text="19"
+                    android:textAlignment="center"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/answerBTB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:gravity="center"
+                    android:onClick="submitAnswer"
+                    android:padding="10dp"
+                    android:tag="1"
+                    android:text="82"
+                    android:textAlignment="center"
+                    android:textSize="35dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/answerCTB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_purple"
+                    android:gravity="center"
+                    android:onClick="submitAnswer"
+                    android:padding="10dp"
+                    android:tag="2"
+                    android:text="8"
+                    android:textAlignment="center"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/answerDTB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_bright"
+                    android:gravity="center"
+                    android:onClick="submitAnswer"
+                    android:padding="10dp"
+                    android:tag="3"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="35dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/playAgainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="playAgain"
+                android:text="Play Again!!"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

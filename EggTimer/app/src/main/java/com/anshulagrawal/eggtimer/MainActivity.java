@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                flipSwitch(button);
+//                flipSwitch(button);
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                if (isTimerRunning)
-                    flipSwitch(button);
+//                if (isTimerRunning)
+//                    flipSwitch(button);
             }
         });
     }
