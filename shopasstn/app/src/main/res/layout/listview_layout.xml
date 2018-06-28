@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/brandName"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:text="an unusually long brand name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:text="30.9 meters"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:text="just putting in something very long to test text wrap"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:text="price"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:text="weight"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+</android.widget.TableLayout>

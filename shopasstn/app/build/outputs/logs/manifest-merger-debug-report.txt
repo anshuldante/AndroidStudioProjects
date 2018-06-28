@@ -1,0 +1,208 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b664e6c6e12d3ba888cb87d56f5e3758/AndroidManifest.xml:2:1-11:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:17:1-56:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/fbe134735c999d0fc2eac2320eb00e54/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ca15d80d41cd1fcffee819eefb62f7ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c69a626cee1d80ddf7dbe610be754713/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f5caa453618a81afe88e409590a06919/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/07c2133bd5471fb8a790944e1d1e9b5c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ac53dac54630f0a5774fdc725b5c599b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6507bf0f75f8f1e911e493fc72b0f4ed/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/60067e3245ee0e429deef6388ce93c48/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/641cca717aed162bc9a37bc693a845ac/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/af7a8333aa37cb3d9090c7ff59b2c211/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:3:5-56
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:5:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:22:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:8:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b664e6c6e12d3ba888cb87d56f5e3758/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b664e6c6e12d3ba888cb87d56f5e3758/AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:46:5-54:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:26:5-20
+	android:supportsRtl
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:14:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:15:9-44
+activity#com.example.a0a00uj.asdashoppingassistant.LoginActivity
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:16:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:20:27-74
+activity#com.example.a0a00uj.asdashoppingassistant.MainActivity
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:23:9-25:59
+	android:label
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:24:13-41
+activity#com.example.a0a00uj.asdashoppingassistant.OrderActivity
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:26:9-51
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:26:19-48
+activity#com.example.a0a00uj.asdashoppingassistant.CompletionActivity
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:27:9-65
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml:27:19-53
+uses-sdk
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b664e6c6e12d3ba888cb87d56f5e3758/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b664e6c6e12d3ba888cb87d56f5e3758/AndroidManifest.xml:5:5-7:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/fbe134735c999d0fc2eac2320eb00e54/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/fbe134735c999d0fc2eac2320eb00e54/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ca15d80d41cd1fcffee819eefb62f7ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ca15d80d41cd1fcffee819eefb62f7ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c69a626cee1d80ddf7dbe610be754713/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c69a626cee1d80ddf7dbe610be754713/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f5caa453618a81afe88e409590a06919/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f5caa453618a81afe88e409590a06919/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/07c2133bd5471fb8a790944e1d1e9b5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/07c2133bd5471fb8a790944e1d1e9b5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ac53dac54630f0a5774fdc725b5c599b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ac53dac54630f0a5774fdc725b5c599b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6507bf0f75f8f1e911e493fc72b0f4ed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6507bf0f75f8f1e911e493fc72b0f4ed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/60067e3245ee0e429deef6388ce93c48/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/60067e3245ee0e429deef6388ce93c48/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/641cca717aed162bc9a37bc693a845ac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/641cca717aed162bc9a37bc693a845ac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/af7a8333aa37cb3d9090c7ff59b2c211/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/af7a8333aa37cb3d9090c7ff59b2c211/AndroidManifest.xml:20:5-44
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:53:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:52:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/AndroidManifest.xml:48:13-74
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/e565e5dc7899cc0e7f52b3386f257bd2/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/d602e591f687237aa50e80cbfcf4d427/AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/AndroidManifest.xml:26:9-47

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a0a00uj.asdashoppingassistant.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/barcodeContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/processBarcodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="141dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="processBarcode"
+            android:text="Process"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/barcodeEditText" />
+
+        <Button
+            android:id="@+id/barcodeScanButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="105dp"
+            android:layout_marginTop="107dp"
+            android:text="Scan\n Barcode"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/processBarcodeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/barcodeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:hint="Barcode"
+            android:inputType="textPersonName"
+            android:text="910001950158"
+            app:layout_constraintBaseline_toBaselineOf="@+id/processBarcodeButton"
+            app:layout_constraintEnd_toStartOf="@+id/processBarcodeButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/randomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="121dp"
+            android:layout_marginStart="121dp"
+            android:text="OR"
+            app:layout_constraintBottom_toTopOf="@+id/barcodeEditText"
+            app:layout_constraintStart_toStartOf="@+id/barcodeEditText" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/listScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="7"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/barcodeScreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ListView
+                android:id="@+id/recomListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/barcodeScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="completeOrder"
+            android:text="Complete Order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
