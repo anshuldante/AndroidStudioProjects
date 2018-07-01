@@ -1,10 +1,12 @@
 package com.anshulagrawal.whatstheweather;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -62,12 +64,15 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("Weather report:", displayText);
                 display.setText(displayText);
             } catch (Exception e) {
+                display.setText("Invalid City!!");
             }
         }
     }
 
     public void onClick(View view) {
         Log.i("Insie button click:", Integer.toString(view.getId()));
+        InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        mgr.hideSoftInputFromWindow(editText.getWindowToken(), 0);
         WeatherFetcher weatherFetcher = new WeatherFetcher();
         weatherFetcher.execute(editText.getText().toString());
     }
