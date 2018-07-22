@@ -16,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.List;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     private LocationManager locationManager;
     private LocationListener locationListener;
+    private TextView latitude;
+    private TextView longitude;
+    private TextView altitude;
+    private TextView accuracy;
+    private TextView address;
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -44,25 +50,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        latitude = findViewById(R.id.latitude);
+        longitude = findViewById(R.id.longitude);
+        altitude = findViewById(R.id.altitude);
+        accuracy = findViewById(R.id.accuracy);
+        address = findViewById(R.id.address);
 
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+
+                latitude.setText(Double.toString(location.getLatitude()));
+                longitude.setText(Double.toString(location.getLongitude()));
+                altitude.setText(Double.toString(location.getAltitude()));
+                accuracy.setText(Double.toString(location.getAccuracy()));
+
+
                 Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
 
+                StringBuilder addressBuilder = new StringBuilder();
                 try {
                     List<Address> addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
                     if (addressList != null && addressList.size() > 0) {
                         Address address = addressList.get(0);
-                        Log.i("Address Line 1: ", address.getAddressLine(0));
-                        Log.i("Postal Code: ", address.getPostalCode());
-                        Log.i("Country Code: ", address.getCountryCode());
-                        Log.i("Country Name: ", address.getCountryName());
+                        addressBuilder.append(address.getAddressLine(0)).append("\n");
+                        addressBuilder.append(address.getPostalCode()).append("\n");
+                        addressBuilder.append(address.getCountryCode()).append("\n");
+                        addressBuilder.append(address.getCountryName());
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                address.setText(addressBuilder.toString());
             }
 
             @Override

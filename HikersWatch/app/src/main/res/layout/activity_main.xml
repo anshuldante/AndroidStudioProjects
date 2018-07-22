@@ -4,15 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/hiker"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="41dp"
+        android:layout_marginTop="30dp"
+        android:text="Hiker's Watch"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="112dp"
+        android:layout_marginStart="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/latitudeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Latitude:"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/longitudeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Longitude:"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/accuracyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Accuracy:"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/altitudeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Altitude:"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/addressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Address:"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_row="5" />
+
+    </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>
