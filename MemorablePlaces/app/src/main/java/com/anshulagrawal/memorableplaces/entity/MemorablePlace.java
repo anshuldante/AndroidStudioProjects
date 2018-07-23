@@ -1,6 +1,7 @@
 package com.anshulagrawal.memorableplaces.entity;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class MemorablePlace implements Serializable {
 
@@ -43,5 +44,20 @@ public class MemorablePlace implements Serializable {
     @Override
     public String toString() {
         return address;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MemorablePlace that = (MemorablePlace) o;
+        return Double.compare(that.latitude, latitude) == 0 &&
+                Double.compare(that.longitude, longitude) == 0 &&
+                Objects.equals(address, that.address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(address, latitude, longitude);
     }
 }
