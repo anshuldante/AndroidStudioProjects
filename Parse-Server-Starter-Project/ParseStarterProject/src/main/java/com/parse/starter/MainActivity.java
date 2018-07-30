@@ -8,6 +8,7 @@
  */
 package com.parse.starter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -44,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         usernameEditText = (EditText) findViewById(R.id.username);
         passwordEditText = (EditText) findViewById(R.id.password);
         button = (Button) findViewById(R.id.login);
-        textView = (TextView) findViewById(R.id.loginMode);
 
         passwordEditText.setOnKeyListener(this);
 
@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setOnClickListener(this);
+
+
+        textView = (TextView) findViewById(R.id.loginMode);
+        textView.setOnClickListener(this);
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
@@ -83,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                     public void done(ParseException e) {
                         if (e == null) {
                             Toast.makeText(getApplicationContext(), "Signed Up successfully!", Toast.LENGTH_LONG).show();
+                            viewUserListing();
                         } else {
                             Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                         }
@@ -94,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
                             Toast.makeText(getApplicationContext(), "Welcome " + user.getUsername(), Toast.LENGTH_LONG).show();
+                            viewUserListing();
                         } else {
                             Toast.makeText(getApplicationContext(), "Invalid Username/password!!", Toast.LENGTH_LONG).show();
                         }
@@ -101,6 +107,11 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                 });
             }
         }
+    }
+
+    private void viewUserListing() {
+        Intent intent = new Intent(getApplicationContext(), UserListingActivity.class);
+        startActivity(intent);
     }
 
     @Override

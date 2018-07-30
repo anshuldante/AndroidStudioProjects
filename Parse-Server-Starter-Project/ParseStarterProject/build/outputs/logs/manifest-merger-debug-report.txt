@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/852f04286f699b5249ef82084fa4c72d/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.4.0.aar/f1af0672a27c3c677a541c3d5e52ce2f/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-cast:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-cast-9.4.0.aar/380095451e12c3066b7052da84e44b9d/AndroidManifest.xml:16:1-20:12
@@ -60,20 +60,20 @@ MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/anshulagra
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.4.0.aar/6302c32e068f59fea0e76377876bd4b9/AndroidManifest.xml:16:1-26:12
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/2e21d985d00ac58a503c235474d866c4/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:23.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/3ef60872bdd11e9e232d7f8a9d1df70a/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
-INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
+INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
 	package
 		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:10:5-32
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-35:12
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:1-36:12
 		INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:9:11-69
@@ -136,7 +136,7 @@ ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Proje
 	android:name
 		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:15:22-76
 application
-ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:17:5-33:19
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:17:5-34:19
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/852f04286f699b5249ef82084fa4c72d/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/852f04286f699b5249ef82084fa4c72d/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.4.0.aar/f1af0672a27c3c677a541c3d5e52ce2f/AndroidManifest.xml:5:5-9:19
@@ -256,9 +256,13 @@ ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Proje
 	android:name
 		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:29:27-74
 activity#com.parse.starter.LoginActivity
-ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:32:9-60
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:32:9-51
 	android:name
 		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:32:19-48
+activity#com.parse.starter.UserListingActivity
+ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:33:9-66
+	android:name
+		ADDED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml:33:19-54
 uses-sdk
 INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/anshulagrawal/AndroidStudioProjects/Parse-Server-Starter-Project/ParseStarterProject/src/main/AndroidManifest.xml

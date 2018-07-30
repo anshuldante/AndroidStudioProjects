@@ -53,6 +53,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.parse.starter.LoginActivity" />
+        <activity android:name="com.parse.starter.UserListingActivity" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 
