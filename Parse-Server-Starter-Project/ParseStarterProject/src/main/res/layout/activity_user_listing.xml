@@ -6,10 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".UserListingActivity">
 
-    <ListView
-        android:id="@+id/userListView"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/userNameListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </android.support.v4.widget.NestedScrollView>
+
 </android.support.constraint.ConstraintLayout>

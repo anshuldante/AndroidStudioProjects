@@ -52,8 +52,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.parse.starter.LoginActivity" />
         <activity android:name="com.parse.starter.UserListingActivity" />
+        <activity android:name="com.parse.starter.UserFeedActivity" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 
