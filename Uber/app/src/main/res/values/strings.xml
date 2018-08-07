@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyParseStarter</string>
+    <string name="title_activity_rider">Rider\'s Screen</string>
+    <string name="title_activity_driver">Map</string>
 </resources>
