@@ -3,10 +3,12 @@ package com.anshulagrawal.myparsestarter;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -14,8 +16,10 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -31,6 +35,7 @@ import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -49,13 +54,14 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
     private CameraUpdate cameraUpdate;
 
     private List<Float> distances = new ArrayList<>();
-    private Map<Float, ParseObject> userRequestMap = new HashMap<>();
+    private List<ParseObject> userRequests = new ArrayList<>();
 
     private LatLng driverLatLng;
     private LatLng requestLatLng;
 
     private double driverLat;
     private double driverLong;
+    private String username;
 
     @SuppressLint("MissingPermission")
     @Override
@@ -109,15 +115,18 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
 
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
         query.setLimit(10);
+        query.whereDoesNotExist("driver");
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> objects, ParseException e) {
                 if (e == null && objects.size() > 0) {
+                    Log.i("Driver's Latitude", Double.toString(driverLat));
+                    Log.i("Driver's Longitude", Double.toString(driverLong));
+                    userRequests = objects;
                     for (ParseObject object : objects) {
                         float[] distanceResults = new float[1];
                         Location.distanceBetween(driverLat, driverLong, object.getDouble("latitude"), object.getDouble("longitude"), distanceResults);
-                        distances.add(distanceResults[0]);
-                        userRequestMap.put(distanceResults[0], object);
+                        distances.add((float) (Math.round(distanceResults[0] / 100) / 10.0));
                     }
                     Collections.sort(distances);
                 }
@@ -133,9 +142,12 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 LatLngBounds.Builder builder = new LatLngBounds.Builder();
+//
+                ParseObject user = userRequests.get(i);
+                username = user.getString("user");
 
                 driverLatLng = new LatLng(driverLat, driverLong);
-                requestLatLng = new LatLng(userRequestMap.get(distances.get(i)).getDouble("latitude"), userRequestMap.get(distances.get(i)).getDouble("longitude"));
+                requestLatLng = new LatLng(user.getDouble("latitude"), user.getDouble("longitude"));
                 builder.include(driverLatLng);
                 builder.include(requestLatLng);
                 LatLngBounds bounds = builder.build();
@@ -143,6 +155,19 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
                 findViewById(R.id.listviewFrame).setVisibility(View.GONE);
                 findViewById(R.id.mapFrame).setVisibility(View.VISIBLE);
                 cameraUpdate = CameraUpdateFactory.newLatLngBounds(bounds, 30);
+
+                ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
+                query.whereEqualTo("user", username);
+                query.findInBackground(new FindCallback<ParseObject>() {
+                    @Override
+                    public void done(List<ParseObject> objects, ParseException e) {
+                        if (e == null && objects.size() > 0) {
+                            ParseObject obj = objects.get(0);
+                            obj.put("driver", ParseUser.getCurrentUser().getUsername());
+                            obj.saveInBackground();
+                        }
+                    }
+                });
             }
         });
     }
@@ -161,16 +186,34 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+//        final View activityRootView = findViewById(R.id.mapFrame);
+//        activityRootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//
+//            @Override
+//            public void onGlobalLayout() {
+//                mMap.addMarker(new MarkerOptions().position(driverLatLng).title("Your location"));
+//                mMap.addMarker(new MarkerOptions().position(requestLatLng).title("Rider's location"));
+//                mMap.animateCamera(cameraUpdate);
+//            }
+//        });
+        // Another way to do the same thing as below
+
+
         mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
             @Override
             public void onMapLoaded() {
-                mMap.addMarker(new MarkerOptions().position(driverLatLng));
-                mMap.addMarker(new MarkerOptions().position(requestLatLng));
-                mMap.moveCamera(cameraUpdate);
+                mMap.addMarker(new MarkerOptions().position(driverLatLng).title("Your location"));
+                mMap.addMarker(new MarkerOptions().position(requestLatLng).title("Rider's location"));
+                mMap.animateCamera(cameraUpdate);
             }
         });
     }
 
     public void openGoogleMaps(View view) {
+        String mapUrl = new StringBuilder("http://maps.google.com/maps?saddr=").append(driverLat).append(',').
+                append(driverLong).append("&addr=").append(requestLatLng.latitude).append(',').append(requestLatLng.longitude).toString();
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
+        startActivity(intent);
     }
 }

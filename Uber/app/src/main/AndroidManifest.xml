@@ -38,14 +38,12 @@
 
         <activity
             android:name=".RiderActivity"
-            android:label="@string/title_activity_rider" />
-        <activity
-            android:name=".DriverMapsActivity"
-            android:label="@string/title_activity_driver" />
-        <activity android:name=".PrimaryDriverActivity" />
+            android:label="@string/title_activity_rider"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DriverActivity"
-            android:label="@string/title_activity_driver"></activity>
+            android:label="@string/title_activity_driver"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

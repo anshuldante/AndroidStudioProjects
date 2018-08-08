@@ -3,6 +3,7 @@ package com.anshulagrawal.myparsestarter;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -46,6 +47,12 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
     private double latitude;
     private double longitude;
     private boolean isRideRequested;
+
+    public void logoutRider(View view) {
+        ParseUser.logOut();
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
 
     @SuppressLint("MissingPermission")
     @Override
