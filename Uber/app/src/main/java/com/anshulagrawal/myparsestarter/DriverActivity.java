@@ -55,6 +55,7 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
 
     private List<Float> distances = new ArrayList<>();
     private List<ParseObject> userRequests = new ArrayList<>();
+    ParseUser driver;
 
     private LatLng driverLatLng;
     private LatLng requestLatLng;
@@ -74,12 +75,12 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
         mapFragment.getMapAsync(this);
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        driver = ParseUser.getCurrentUser();
 
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                driverLat = location.getLatitude();
-                driverLong = location.getLongitude();
+                saveDriverLocation(location);
             }
 
             @Override
@@ -106,33 +107,10 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 100, 1, locationListener);
                 Location lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                 if (lastKnownLocation != null) {
-                    driverLat = lastKnownLocation.getLatitude();
-                    driverLong = lastKnownLocation.getLongitude();
+                    saveDriverLocation(lastKnownLocation);
                 }
             }
         }
-
-
-        ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
-        query.setLimit(10);
-        query.whereDoesNotExist("driver");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null && objects.size() > 0) {
-                    Log.i("Driver's Latitude", Double.toString(driverLat));
-                    Log.i("Driver's Longitude", Double.toString(driverLong));
-                    userRequests = objects;
-                    for (ParseObject object : objects) {
-                        float[] distanceResults = new float[1];
-                        Location.distanceBetween(driverLat, driverLong, object.getDouble("latitude"), object.getDouble("longitude"), distanceResults);
-                        distances.add((float) (Math.round(distanceResults[0] / 100) / 10.0));
-                    }
-                    Collections.sort(distances);
-                }
-                adapter.notifyDataSetChanged();
-            }
-        });
 
         driverListView = findViewById(R.id.listView);
         adapter = new ArrayAdapter<Float>(getApplicationContext(), android.R.layout.simple_list_item_1, distances);
@@ -154,7 +132,7 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
                 Log.i("bounds: ", bounds.toString());
                 findViewById(R.id.listviewFrame).setVisibility(View.GONE);
                 findViewById(R.id.mapFrame).setVisibility(View.VISIBLE);
-                cameraUpdate = CameraUpdateFactory.newLatLngBounds(bounds, 30);
+                cameraUpdate = CameraUpdateFactory.newLatLngBounds(bounds, 40);
 
                 ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
                 query.whereEqualTo("user", username);
@@ -215,5 +193,33 @@ public class DriverActivity extends FragmentActivity implements OnMapReadyCallba
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                 Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
         startActivity(intent);
+    }
+
+    private void saveDriverLocation(Location location) {
+        driverLat = location.getLatitude();
+        driverLong = location.getLongitude();
+        driver.put("latitude", driverLat);
+        driver.put("longitude", driverLong);
+        driver.saveInBackground();
+        ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
+        query.setLimit(10);
+        query.whereDoesNotExist("driver");
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null && objects.size() > 0) {
+                    Log.i("Driver's Latitude", Double.toString(driverLat));
+                    Log.i("Driver's Longitude", Double.toString(driverLong));
+                    userRequests = objects;
+                    for (ParseObject object : objects) {
+                        float[] distanceResults = new float[1];
+                        Location.distanceBetween(driverLat, driverLong, object.getDouble("latitude"), object.getDouble("longitude"), distanceResults);
+                        distances.add((float) (Math.round(distanceResults[0] / 100) / 10.0));
+                    }
+                    Collections.sort(distances);
+                }
+                adapter.notifyDataSetChanged();
+            }
+        });
     }
 }
