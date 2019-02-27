@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
+            "outputFile": "/Users/a0a00uj/Desktop/shp/AndroidStudioProjects/shopasstn/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "/Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/9064ab2e82d8a047846cd1f557d05f0c/res/values-tr/values-tr.xml",
+                    "source": "/Users/a0a00uj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/347ea2c3d175d71ba4407515478bde5a/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/res/values-tr/values-tr.xml",
+                    "source": "/Users/a0a00uj/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/791c48f34b93f3999fa8a83a7ba2616f/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anshulagrawal/AndroidStudioProjects/shopasstn/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
+            "outputFile": "/Users/a0a00uj/Desktop/shp/AndroidStudioProjects/shopasstn/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "/Users/anshulagrawal/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/ddb48c94e600a1c460ec4ef43ee4873a/res/values-he/values-he.xml",
+                    "source": "/Users/a0a00uj/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.6.0.aar/791c48f34b93f3999fa8a83a7ba2616f/res/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
